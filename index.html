@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <link href="weather.css" type="text/css" rel="stylesheet" />
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>WEATHER APP</title>
+  </head>
+  <body>
+    <body>
+      <div class="wrap">
+        <nav class="navbar navbar-dark bg-primary mb-3">
+            <div class="container">
+              <button onclick="this.innerHTML= Date()">The time is?</button>
+              
+            </div>
+        </nav>
+        <div class="container searchContainer">
+            <div class="search card card-body">
+                <h2>Get The Weather For a Location</h2>
+                <p class="lead">Enter Your Location</p>
+                <p><input type="text" id="searchUser" class="form-control" autofocus placeholder="Search for a location"></p>
+            </div>
+            <br>
+            <div id="profile"></div>
+        </div>
+        <div class="container text-center mt-2" id="click">
+            <button class="btn btn-primary" id="submit">Submit</button>
+        </div>
+        
+        <div id="content">
+
+        </div>
+        <footer class="mt-5 p-3 text-center bg-light">
+             &copy;Matthew
+        </footer>
+      </div>
+  </body>
+  <script src="desc.js"></script>
+  <script src="ui.js"></script>
+  <script src="app.js"></script>
+</html>
